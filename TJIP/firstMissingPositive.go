@@ -7,7 +7,6 @@ func firstMissingPositive(nums []int) {
 	for _, num := range nums {
 		set[num] = struct{}{}
 	}
-
 	for i := 0; i <= len(nums)+1; i++ {
 		if _, exists := set[i]; !exists {
 			return i
